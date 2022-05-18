@@ -1,0 +1,393 @@
+/* Root */
+
+:root {
+  --main-heading-color: #373C3E;
+  --main-text-color: #373F41;
+  --main-button-color: #1959BA;
+  --main-button-hover: ##4878c2;
+  --main-header-font-size__mobile: 24px;
+  --heading-font: 1.5rem;
+  --secondary-font: "Lato";
+}
+
+body {
+  width: 100%;
+}
+
+/* Components */
+
+.button {
+  background-color: var(--main-button-color);
+  border-radius: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.heading-styling {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 3.75rem;
+  color: var(--main-heading-color);
+}
+
+.heading-styling_smaller {
+  font-family: 'Poppins';
+  font-weight: 900;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #2A2923;
+}
+
+.paragraph-styling {
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+  color: var(--main-text-color);
+}
+
+/* Navbar */
+
+.navbar {
+  height: 81px;
+  font-family: 'Lato';
+  background-color: #FFF;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand img {
+    height: 60px;
+    width: auto;
+  }
+}
+
+.navbar-toggler {
+  border: transparent;
+  font-size: 2.5rem;
+}
+
+.la.la-bars.menu-button {
+  color: #000;
+}
+
+.nav-link {
+  color: var(--main-font-color)!important;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.nav-item {
+  position: relative;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.nav-item::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: var(--main-button-color);
+  width: 0%;
+  content: "";
+  height: 4px;
+  transition: all 0.5s;
+  display: none;
+}
+
+.active::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: var(--main-button-color);
+  width: 30%;
+  content: "";
+  height: 4px;
+  transition: all 0.5s;
+}
+
+@media (max-width: 992px) {
+  .active::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: var(--main-button-color);
+    width: 30%;
+    content: "";
+    height: 4px;
+    transition: all 0.5s;
+    display: none;
+  }
+}
+
+.nav-item:hover::after {
+  width: 30%;
+}
+
+.active {
+  font-weight: 700;
+}
+
+/* Hero Section */
+
+.hero-banner-section {
+  background-image: url("../../assets/img/kelli-tungay-Sj0nhVIb4eY-unsplash%202.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 399px;
+}
+
+@media (min-width: 992px) {
+  .hero-banner-section {
+    background-image: url("../../assets/img/kelli-tungay-Sj0nhVIb4eY-unsplash%202.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 580px;
+  }
+}
+
+.main-heading {
+  font-size: var(--main-header-font-size__mobile);
+  line-height: 36px;
+  font-family: 'Poppins';
+  font-weight: 900;
+  color: #373c3e;
+}
+
+@media (min-width: 992px) {
+  .main-heading {
+    font-size: 56px;
+    line-height: 84px;
+    font-family: 'Poppins';
+    font-weight: 900;
+    color: #373c3e;
+  }
+}
+
+.heading-secondary {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  font-family: 'Lato';
+  color: #373F41;
+}
+
+@media (min-width: 992px) {
+  .heading-secondary {
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: 400;
+    font-family: 'Lato';
+    color: #373F41;
+  }
+}
+
+/* description section */
+
+/* About me */
+
+.about-image_container {
+  position: relative;
+}
+
+.about-image_container img {
+  width: 100%;
+}
+
+.about-image_container::before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  width: 60%;
+  height: 60%;
+  z-index: -1;
+  background-color: #FFE56B;
+}
+
+.art-koucingas-about {
+  background-color: #FFFCEE;
+  height: 641px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.art-koucingas-about ul {
+  font-family: 'Lato';
+  font-size: 24px;
+  line-height: 35px;
+  font-weight: 400;
+}
+
+@media (min-width: 992px) {
+  .art-koucing-image-wrapper img {
+    /*height: 80%;*/
+    /*margin-right: 110px;*/
+    /*z-index: -1;*/
+  }
+}
+
+@media (min-width: 992px) {
+  .art-koucingas-about {
+    /*z-index: -2;*/
+  }
+}
+
+ul > li {
+  padding: 10px;
+}
+
+.la.la-check {
+  margin-right: 8px;
+  color: var(--main-button-color);
+}
+
+/* Slider */
+
+.carousel-item:after {
+  clear: both;
+  content: "";
+  background-color: transparent;
+}
+
+/* About-me */
+
+.about-text-styling {
+  line-height: 2rem;
+  font-size: 1.4rem;
+  color: var(--main-font-color);
+}
+
+.personal-photo img {
+  width: 100%;
+}
+
+.about-me-description_container {
+  position: relative;
+  background-color: #FFFCEE;
+}
+
+.about-me-description_container::before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 60%;
+  height: 60%;
+  z-index: -1;
+  background-color: #FFE56B;
+}
+
+.blue-icon {
+  color: #1959BA;
+  font-size: 1.6rem;
+}
+
+/* Phone number */
+
+.phone-number {
+  background-color: #F2F3F5;
+}
+
+.phone-number_font {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  color: #000000;
+}
+
+.footer {
+  background-color: #181F36;
+}
+
+.footer-link a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.social-links {
+  color: #FFFFFF;
+  font-size: 24px;
+}
+
+.social-links1 {
+  color: #FFFFFF;
+  font-size: 15px;
+}
+
+.horizontal-line {
+  border-top: 1px solid #FFFFFF;
+}
+
+.hero-description-container_wrapper {
+  background-color: #fffcee;
+  height: 80%;
+  padding: 6rem;
+}
+
+.hero-description-container_wrapper_white {
+  background-color: #ffffff;
+  height: 80%;
+  padding: 6rem;
+}
+
+.hero-description-container {
+  width: 86%;
+}
+
+.disclousure {
+  font-size: 0.7rem;
+  color: #373F41;
+}
+
+.yellow-rectangle {
+  width: 4rem;
+  height: 4rem;
+  background-color: #ffe56b;
+}
+
+.yellow-rectangle .la.la-check {
+  color: #000000;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.accordion-header {
+  background-color: transparent;
+}
+
+.accordion-item {
+  background-color: transparent;
+}
+
+.accordion-button {
+  background-color: transparent!important;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border-bottom-right-radius: calc(0.25rem - 1px);
+  border-bottom-left-radius: calc(0.25rem - 1px);
+  background-color: transparent!important;
+}
+
